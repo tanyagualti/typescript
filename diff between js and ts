@@ -1,0 +1,35 @@
+-> typescript is a superset of javascript bcz typescript contain all features of js and also contains additional features.
+-> browser not support typescript .ts code is convert into js and then run the code
+-> ts share same syntax as js
+-> ts provide extra capabilities by adding type to js
+
+
+why to use typescript?
+ts allows developers to bind the type to variable and function return statements. that helps to remove all the type error during runtime.
+
+js me jo bhi error ati hai vo run time pr hi ati hai but in ts error compile time pr hi pta lg jati hai
+
+
+in typescript file
+let last="tanya";
+ last=10; //this last give compile time error:string variable not assign the number
+
+
+ in ts
+ let obj={
+    name:'tanya'
+
+}
+console.log(obj.address); //this gives compile time error address is not exist
+
+
+ but in js file
+ let last="tanya";
+ last=10; //this give no compile time error 
+
+ in js 
+ let obj={
+    name:'tanya'
+
+}
+console.log(obj.address); //no compile time error 
