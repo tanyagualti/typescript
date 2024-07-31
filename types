@@ -15,8 +15,8 @@ type:
 null:-only one value:null,intentional absence of value(agr hme kisi prooerty me koi value nhi chiye toh hum intentionally hum null dal dete hai)
 undefined:-one value undefined,default value of uninitialized variable(yeh same null ki trh hoti hai but agr glti s koi value null reh jati hai toh 
 wha by default undefined ho jata hai)
-any:- skip the type checking
-
+any:- skip the type checking (any bilkul ase kam krega jesa javascript me hota hai type s hme koi mtlb nhi hai)
+//in typescript avoid any bcz it works totally as js so why we use ts instead of js
 
 let username=null; 
 console.log(username); //null
