@@ -7,3 +7,57 @@ let email:string="tanya@gmail.com";
 
 let value=`user email is: ${email}`; //interpolation in typescript or javascript
 console.log(value);
+
+
+
+
+type:
+null:-only one value:null,intentional absence of value(agr hme kisi prooerty me koi value nhi chiye toh hum intentionally hum null dal dete hai)
+undefined:-one value undefined,default value of uninitialized variable(yeh same null ki trh hoti hai but agr glti s koi value null reh jati hai toh 
+wha by default undefined ho jata hai)
+any:- skip the type checking
+
+
+let username=null; 
+console.log(username); //null
+console.log(typeof username);//object
+
+
+let username;
+console.log(username); //undefined
+console.log(typeof username); //undefined
+
+
+
+
+null and undefined is falsy value
+let username=null;
+if(username){
+    console.log("true");
+}
+else{
+console.log("false");
+
+}
+log is false
+
+
+
+---------------------------any----------------------------
+//it is not posible agr number likhna hai toh interface use krna pdega yaa any lga do 
+let ram:number = {
+age:10,
+salary:20000
+
+}
+console.log(ram.age);
+console.log(ram.salary);
+
+valid for any // and interface see in interface file
+let ram:any = {
+age:10,
+salary:20000
+
+}
+console.log(ram.age);
+console.log(ram.salary);
