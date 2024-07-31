@@ -11,6 +11,9 @@ import { multiply } from './fun';
 const result=multiply(2,3,4);
 
 
+export import is not using directing it is only use in framework of js?
+You're right—export import is a specific feature of TypeScript and not standard JavaScript. In standard JavaScript (ES6), 
+the import and export syntax is used for module management, but there is no export import syntax in standard JavaScript.
 
 
 
