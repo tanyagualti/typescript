@@ -1,0 +1,16 @@
+import {} from 
+
+
+suppose u have fun.ts file 
+export function multiply(a,b,c){ /yeh function hme khi use krna hai toh hme ise import krna pdega kisi file me
+return a*b*c;
+}
+
+sun.ts
+import { multiply } from './fun';
+const result=multiply(2,3,4);
+
+
+
+
+
