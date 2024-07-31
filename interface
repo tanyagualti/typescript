@@ -1,0 +1,11 @@
+interface person{
+    age:number,
+    salary:number
+}
+let ram:person = {
+age:10,
+salary:20000
+
+}
+console.log(ram.age);
+console.log(ram.salary);
