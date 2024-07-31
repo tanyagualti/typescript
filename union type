@@ -1,0 +1,9 @@
+jb hme multiple type ki value rkhni hai array me toh hum union type use krnge like that    number | string | boolean
+
+
+let mixed:(string | number | boolean)[]=["one","two","three",20,true]; //ab hum is array main whi method use kr skte hai jo teeno me ho
+upprcase sirf  string k liye hota hai islia use use nhi kr skte
+
+
+
+let mixed:(string)[]=["one","two","three",20,true]; //like this we are only give the string value
