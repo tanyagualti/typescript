@@ -1,0 +1,9 @@
+primitive type:
+number
+string
+boolean
+
+let email:string="tanya@gmail.com";
+
+let value=`user email is: ${email}`; //interpolation in typescript or javascript
+console.log(value);
