@@ -23,7 +23,9 @@ email:'tanya@gmail.com'
 }
 console.log(student.name);
 
+Inline Type Annotation:
 
+The part { name: string, email: string } is an inline type annotation. It defines the expected structure (type) of the student object.
 
 
 
