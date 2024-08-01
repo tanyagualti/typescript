@@ -1,0 +1,30 @@
+object type : represents multiple properties
+
+let student:object={  //object type ka variable bna diya ... ase sirf store kr skte hai name email access nhi kr skte
+
+name:'tanya',
+email:'tanya@gmail.com'
+
+}
+console.log(typeof student); //object
+
+//right way is hme object ko btana pdega ki name kon s type ka hoga email kon s
+
+let student:{
+
+name:string,
+email:string
+
+}={
+
+name:'tanya',
+email:'tanya@gmail.com'
+
+}
+console.log(student.name);
+
+
+
+
+
+//primitive types ko use kr ke hum jo apna type bna rhe hai use khte hai object type
