@@ -20,3 +20,45 @@ const person: Person = {
     console.log("Hello!");
   }
 };
+
+
+
+Flexibility, Reusability, and Extensibility:
+
+Interfaces:
+
+Flexibility: Interfaces can define complex structures and can be extended to add additional properties or methods.
+Reusability: Once defined, interfaces can be used across multiple variables, functions, and classes.
+Extensibility: Interfaces can be extended or merged, making it easy to build upon existing types.
+
+interface Person {
+  name: string;
+}
+
+interface Student extends Person {
+  email: string;
+}
+
+let student: Student = {
+  name: 'tanya',
+  email: 'tanya@gmail.com'
+};
+
+
+
+Simple, Single-use Scenarios:
+
+Inline Type Annotations (Objects):
+
+Simplicity: Ideal for defining the type of a variable or function parameter inline, especially when the type is used only once or in a very limited scope.
+Single-use: Best suited for cases where the type definition is straightforward and does not need to be reused or extended.
+
+
+let student: {
+  name: string;
+  email: string;
+} = {
+  name: 'tanya',
+  email: 'tanya@gmail.com'
+};
+
