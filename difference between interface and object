@@ -1,0 +1,22 @@
+An object is a specific instance containing data. It is a value assigned to a variable and contains properties with specific values.
+let student = {
+  name: 'Tanya',
+  email: 'tanya@gmail.com'
+};
+
+
+An interface defines the shape or structure that objects should adhere to. It is a TypeScript
+construct used to type-check objects during development, ensuring that they meet certain criteria.
+interface Person {
+  name: string;
+  age: number;
+  greet(): void;
+}
+
+const person: Person = {
+  name: "John",
+  age: 30,
+  greet() {
+    console.log("Hello!");
+  }
+};
