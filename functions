@@ -1,0 +1,16 @@
+// set of statement written for doing a specific task is called functions.
+function fun(a:number,b:number):number{ //aur yha hr parameter ka type batana pdega
+    return a+b;
+}
+let result=fun(20,30);
+  console.log(result);
+
+
+
+
+// agr kuch return nhi krta toh hum function ka return type void de denge
+  function fun():void{
+    console.log("called");
+}
+
+fun();
