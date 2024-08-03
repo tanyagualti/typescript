@@ -1,0 +1,38 @@
+enum:- group of named constant values
+example: jese product bhja toh status me sirf 3 hi value hongi
+1.shipped 2. delivered 3. dispatched
+toh tb hum enum use kr skte hai
+exaple : weeks,month that is fixed
+
+enum state {
+    SHIPPED,
+    DELIVERED,
+    DISPATCHED,
+}
+console.log(state.SHIPPED);
+
+
+
+
+enum state {
+    SHIPPED,
+    DELIVERED,
+    DISPATCHED,
+}
+
+function fun(value:state):void{
+    switch(value){
+        case state.DELIVERED:
+        console.log("this is delivered");
+        break;
+        case state.SHIPPED:
+        console.log("this is shipped");
+        break;
+        case state.DISPATCHED:
+        console.log("this is dispatched");
+        break;
+         default:
+        console.log("plz enteer valid status");
+    }
+}
+fun(state.DELIVERED);
