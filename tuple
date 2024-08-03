@@ -1,0 +1,18 @@
+tuple array ki trah hota hai tuple me hum type aur size fixed kr skte hai array m asa nhi hota
+.number of elements are fixed
+.type of elements are known and same
+
+let skills:[string,number]=["programming",300];
+console.warn(skills);
+
+
+real word example:-
+//rgba() hme color dalna hai toh hum tuple use kr skte hai usme 4 chize fix hoti hai
+
+let color:[number,number,number,number]=[255,255,255,0.1];
+console.warn(color);
+
+//hum yha optional bhi bna skte hai tuple jese alpha hme kbhi kbhi nhi dena hota toh agr hum ase hi skip kr denge toh error aygi toh hme optional
+k age ques mark lgana pdhta hai uska mtlb hai uski value do na do error ni aygi
+let color:[number,number,number,number?]=[255,255,255];
+console.warn(color);
