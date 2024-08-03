@@ -1,0 +1,87 @@
+void: represend constant value that may be undefined or null
+void simply means no data
+// yeh mainly function k sath use hota hai jb function kuch return nhi kr rha hota
+//agr ap void use nhi kr rhe aur function value bhi return nhi kr rha toh vo bydefault void refer ho jata hai
+function fun():void{
+    console.log("call");
+}
+fun();
+
+  never: repesent value that will never occur,used when function never return value
+    never type asi value ko represent krta hai jise kbhi koi occur hi nhi krega
+    function fun():never{
+      while(true){}//iska infinite loop chal rha hai it will never return back thats
+        // why we use never type yaa fir yha sara kam ho rha hai but normal termination nhi ho rha toh never use krte hai
+}
+fun();
+
+      function fun():never{
+    
+    while(true){
+      throw new Error("this is my Error"); //yha error aa jaygi
+    }
+    
+
+}
+fun();
+
+
+
+
+  unknown: not known, type safe counterpart of any
+        unkown ka use tb krna hai jb type pta hi na ho kon sa use hoga 
+        yeh counterpart hai any ka hi but type safe counterpart
+        jb any use krte hai toh usme type checking hi disable kr dete hai
+        jb apko type safety bhi use krni hai aur apko yeh bhi ni pta kis type ki value hai toh ap unknown use krnge
+
+
+function fun(){
+    
+   return "this is value";
+    
+
+}
+let r:unknown = fun();
+let r1:any = fun();
+  console.log(r1.toUpperCase()); //any me uppercase hoke dikha diya qki yha type checking hi disable kr dete hai
+  console.log(r.toUpperCase()); //but it shows error unknown type toUppercse method use nhi kr skta 
+
+
+  // agr hme string use krna hai toh hm assertion use kr skte hai
+  function fun(){
+    
+   return "this is value";
+    
+
+}
+let r:unknown = fun();
+let r1:any = fun();
+
+let valueInString:string=r as string;
+console.log(valueInString.toUpperCase());
+
+
+// In TypeScript, type assertions are a way to tell the compiler to treat a value as a different type. 
+    // Type Assertion: It doesn't change the runtime type of the value; it only changes how TypeScript treats
+    // the type of the value during compilation.
+
+
+    // type assertion second example
+    function fun(){
+    
+   return 25;
+    
+
+}
+let r:unknown = fun();
+let r1:any = fun();
+
+let valueInString:number=r as number;
+console.log(valueInString*21);
+
+
+      apko unknown value change krni hi pdegi ap unknown pr koi property use nhi kr skte ho.. aur change hogi type assettion s
+
+
+
+        
