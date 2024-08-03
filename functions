@@ -14,3 +14,24 @@ let result=fun(20,30);
 }
 
 fun();
+
+
+
+
+
+
+class person{
+   names:string | null =null;
+   age:number | null=null;
+
+   fun():void{
+    console.log("fun");
+   }
+}
+
+let p =new person();
+
+
+p.fun();
+console.log(p.names='tanya');
+console.log(p.age=21);
