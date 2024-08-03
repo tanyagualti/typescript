@@ -7,3 +7,9 @@ upprcase sirf  string k liye hota hai islia use use nhi kr skte
 
 
 let mixed:(string)[]=["one","two","three",20,true]; //like this we are only give the string value
+
+
+
+let userId:string | null | number=null;
+userId=121;
+console.log(userId);
