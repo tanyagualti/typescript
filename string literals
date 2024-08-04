@@ -1,0 +1,20 @@
+agr apko asi string bnani hai jisme ap chahte ho ki specific string value hi dale toh us case me use krnge string literal value
+
+let userName : "tanya";
+userName = "ankit";
+
+ab yha tanya hi ayga userName me aur kuch nhi asign kr skte
+
+err:Type '"ankit"' is not assignable to type '"tanya"'.
+
+
+//tanya assign kr skte hai bhut sare
+let userName : "tanya";
+userName = "tanya";
+
+
+
+//agr hum chahte hai ek s jyada value aye toh aa skti hai but maximum 3 hi
+let userName : "tanya" | "manya" | "sanya";
+userName = "tanya";
+userName="manya";
