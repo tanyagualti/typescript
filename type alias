@@ -1,0 +1,34 @@
+kisi bhi chiz ka hum temperory name de skte dete hai toh use khte hai aliasing krdi
+type alias :- creating temprerory name of type
+
+
+type xyz=string; //yha string ka name change kr dia hai ab hum string ko xyz bulaynge
+let address:xyz="mumbai";
+// ab jo developer hai vo string k features toh use krna chahta hai but use string name use nhi krna
+console.log(typeof address); //string
+
+
+
+
+//hme ek type bnana hai jisme hum alphabet bhi rkh skte hai aur numerical bhi
+
+type alphanum=string | number;
+let password:alphanum=12212;
+let password1:alphanum="agsa";
+console.log(typeof password);
+console.log(typeof password1);
+
+
+
+type order = {
+    title:string;
+    price:number;
+    status:string;
+};
+
+let order1:order={
+    title:"bookish",
+    price:1212,
+    status:'hello'
+};
+console.log(order1)
