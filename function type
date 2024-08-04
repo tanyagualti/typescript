@@ -1,0 +1,88 @@
+// type of function
+//jese variable ka type hota hai vese function ka bhi type hota hai
+
+let x:string="tanya";
+// function ko bhi ek variable me dal rhe hai aur us variable ko function k type k according define krnge
+ let y:(a:number,b:number)=>number = function fun(a:number,b:number):number{
+    return 0;
+ }
+
+
+
+
+
+
+ let person :{
+firstName: string;
+lastName: ()=>string;
+
+};
+person={
+    firstName:"tanya",
+    lastName:function xyz(){
+        return "hel";
+    }
+}
+console.log(person.lastName());
+
+
+
+//required parameters :- ise chod nhi skte chodnge toh error aa jaygi
+function fun(a:string,b:string):void{
+console.log(a);
+}
+
+fun("a");
+//this gives error bcz required
+Expected 2 arguments, but got 1.
+'b' is declared but its value is never read.
+
+
+//optional parameters :- yeh optional hai koi error nhi aygi
+
+function fun(a:string,b?:string):void{ //bcz of ques mark b is getting optional
+console.log(a);
+}
+
+fun("a");
+
+
+// hum isme yeh bhi kr skte hai ki jb bhi hum b ki value chod denge iski value n ho jaygu
+function fun(a:string,b:string = 'n'):void{
+console.log(a,b);
+}
+
+fun("a");
+//nhi chodnge toh whi value hogi jo likhnege
+function fun(a:string,b:string = 'n'):void{
+console.log(a,b);
+}
+
+fun("a","b");
+
+
+
+//agr second value nhi first value chodni hai aur default value grab krni hai toh undefined likhna pdega
+function fun(a:string= 'n',b:string):void{
+console.log(a,b);
+}
+
+fun(undefined,"a");
+
+
+
+//rest parameters
+
+//isme do parameter toh pass krne hi krne hai usse jayda kitne bhi pass kr skte ho
+function fun(a:number,b:number,...rest: number[]):number{
+    let sum=a+b;
+    rest.forEach(n=>{
+        sum=sum+n;
+    
+    });
+    console.log(sum);
+    return sum;
+
+}
+
+fun(1,2,3,4,5);
