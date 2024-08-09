@@ -9,3 +9,42 @@ salary:20000
 }
 console.log(ram.age);
 console.log(ram.salary);
+
+
+
+
+if i want to use same interface in many component or places then we make interface with command
+: ng generate interface folder_name/interface_name
+
+export likha ayga bcz yeh hme available krwana hai pure application me use krne k liye
+export interface Person {
+
+	id?:number,  //id is optional
+	name:string,
+	email:string
+}
+
+
+
+//signup is component under patient module
+import { Component, OnInit } from '@angular/core';
+import { Person } from '../../interfaces/person';
+
+@Component({
+  selector: 'app-signup',
+  templateUrl: './signup.component.html',
+  styleUrls: ['./signup.component.css']
+})
+export class SignupComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+obj:Person={ //use this interface as a type
+
+  "name":"tanya",
+  "email":"tanya@gmail.com"
+}
+}
+
